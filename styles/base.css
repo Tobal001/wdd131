@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Proza Libre", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     background-color: #C4DFE6;
 }
@@ -24,9 +24,10 @@ main {
 }
 
 h1 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
     font-size: 2rem;
+    color: #fff;
 }
 
 nav {
@@ -62,17 +63,19 @@ nav li:hover {
 }
 
 h2 {
-    font-family: "Proza Libre", sans-serif;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
     color:#fff;
     background-color: #66A5AD;
     padding: 10px;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 h3 {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 10px;
     
@@ -92,17 +95,33 @@ main {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.card ul {
-    list-style-type: none;
-    padding: 0;
+.flex-container-card-two {
+    display: grid;
+    place-content: center;
 }
 
-.card ul li a {
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.list {
+    list-style-type: none;
+    padding-top: 20%;
+    text-align: center;
+
+}
+
+.list a {
     color: #0055a5;
     text-decoration: none;
 }
 
-.card ul li a:hover {
+.list a:hover {
     text-decoration: underline;
 }
 
@@ -114,27 +133,24 @@ main {
 }
 
 .flex-container img {
-    width: 150px;
-    height: auto;
     display: block;
-    margin: 0 auto 10px auto;
 }
 
-.flex-container img:last-child {
+.img-profile {
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.img-flag {
     width: 100px;
     height: auto;
-    display: block;
-    margin: 10px auto 0 auto;
+    margin-right: 10px;
 }
 
 .flex-container p {
     text-align: center;
-    margin: 10px 0;
-}
-
-.flex-container-card-two {
-    display: grid;
-    place-content: center;
+    margin: 10px;
 }
 
 @media (min-width: 640px) {
@@ -148,15 +164,10 @@ main {
         margin-bottom: 20px;
     }
 
-    .flex-container img {
-        margin-right: 10px;
-    }
-    
-    .flex-container img:last-child {
-
-        margin-right: 0;
+    .img-profile {
         margin-left: 10px;
     }
+    
     
     .flex-container p {
         margin: 0;
@@ -179,4 +190,9 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+
+#lastModifiedDate {
+    font-size: small;
+
 }
