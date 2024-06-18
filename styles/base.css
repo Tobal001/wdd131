@@ -11,11 +11,9 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
     background-color: #66A5AD;
-    padding: 20px;
 }
 
 header,
@@ -24,6 +22,7 @@ main {
 }
 
 h1 {
+    padding: 20px;
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
     font-size: 2rem;
