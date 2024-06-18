@@ -26,7 +26,7 @@ h1 {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    color: #fff;
+    color: #000;
 }
 
 nav {
@@ -64,7 +64,7 @@ nav li:hover {
 h2 {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 400;
-    color:#fff;
+    color:#000;
     background-color: #66A5AD;
     padding: 10px;
     border-radius: 20px 20px 0 0;
@@ -184,7 +184,7 @@ footer {
     padding: 20px;
     background-color: #66A5AD;
     margin-top: 20px;
-    color: #fff;
+    color: #000;
 }
 
 footer p {
