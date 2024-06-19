@@ -1,0 +1,84 @@
+<!--practical use of DOM APIs
+
+In this challenge we want to make a simple shopping list example that allows 
+you to dynamically add items to the list using a form input and button. 
+When you add an item to the input and press the button:
+
+    The item should appear in the list.
+    Each item should be given a button that can be pressed to delete that item off the list.
+    The input should be emptied and focused ready for you to enter another item.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        //refereances to the list
+        const list = document.querySelector("ul")
+        const input = document.querySelector("input")
+        const button = document.querySelector("button")
+
+        //button click function
+        button.addEventListener('click', () => {
+            //store current value of input element into variable
+            const myItem = input.value;
+            //empty string
+            input.value='';
+
+            //3 more elements
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');    
+
+            //append span and button as child of listItem
+            listItem.appendChild(listText);
+            listText.textContent = myItem;
+            listItem.appendChild(listBtn);
+            //set text content of span to the input element 
+            //list(saved from before)
+            //text content of the new button will be delete
+            listBtn.textContent = 'Delete';
+            //append(add) the list idem as a child of the list
+            list.appendChild(listItem);
+            //attach an event handler to delete button so, when clicked,
+            //it will delete the entire list item
+            listBtn.addEventListener('click', () => {
+                list.removeChild(listItem);
+            });
+            //focus method to fucus the input element ready for entering
+            //another shoping item
+            input.focus();
+        });
+
+    </script>
+  </body>
+</html>

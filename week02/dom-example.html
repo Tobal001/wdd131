@@ -6,6 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple DOM example</title>
+    <!--dynamic manipulation-->
+    <style>
+        .highlight {
+          color: white;
+          background-color: black;
+          padding: 10px;
+          width: 250px;
+          text-align: center;
+        }
+    </style>
   </head>
   <body>
       <section>
@@ -20,8 +30,9 @@
         // the text content within it and href selects the url within href
         link.textContent = "Mozilla Developer Network";
         link.href = "https://developer.mozilla.org";
+
         
-        
+        //creating and placing new nodes
         const sect = document.querySelector("section");
         const para = document.querySelector('p');
         para.textContent = "we hope you enjoyed the ride.";
@@ -31,7 +42,28 @@
         );
         const linkPara = document.querySelector("p");
         linkPara.appendChild(text);
+        
+        // //moving and removing elements 
+        // sect.appendChild(linkPara);
+        // // removing node 
+        // sect.removeChild(linkPara);
+        // //When you want to remove a node based only on a reference to itself
+        // linkPara.remove();
+        // //older browser remove itself
+        // linkPara.parentNode.removeChild(linkPara)
+        
+        //Inline manipulating Styles with HTMLElement.style
+        // para.style.color = "white";
+        // para.style.backgroundColor = "black";
+        // para.style.padding = "10px";
+        // para.style.width = "250px";
+        // para.style.textAlign = "center";
 
+        //this takes two arguments, the attribute you want to set on the element, and the value you want to set it to
+        //this somehow effect the <style> i have set in the header
+        para.setAttribute("class", "highlight");
+
+        
       </script>
   </body>
 </html>
