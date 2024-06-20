@@ -45,10 +45,12 @@ nav ul {
 nav a {
     display: block;
     color: #fff;
-    text-align: center;
+    text-align:center;
     padding: 1rem;
     text-decoration:none;
 }
+
+
 
 nav li:hover {
     border: 2px solid rgba(255, 255, 255, 0.2);
