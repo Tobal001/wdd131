@@ -1,0 +1,33 @@
+@media (min-width: 640px) {
+
+    nav {
+        display: flex;
+        justify-content: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: row;
+    
+    }
+    
+    nav li {
+        margin: 0 
+    }
+    .container {
+        display:grid; 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-gap: 20px;
+        place-items: center;
+    }
+
+    figcaption {
+        margin-bottom: 0;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+}
