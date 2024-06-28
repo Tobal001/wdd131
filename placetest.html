@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cusco Peru</title>
+    <meta name="description" content="Place Assignment, Cusco, Peru Machu Picchu a place I've always wanted to visit">
+    <meta name="author" content="Cristobal Henriquez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Cusco, Peru</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/peru-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/peru-medium.webp" media="(min-width: 500px)">
+                <img src="images/peru-small.webp" alt="Machu Picchu Cusco, Peru" width="250" height="500">
+            </picture>
+            <div class="place-data">
+                <h2>Data</h2>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Area:</strong></td>
+                            <td>385.1 sq km</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Population:</strong></td>
+                            <td>Approximately 430,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Languages:</strong></td>
+                            <td>Spanish, Quechua</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Currency:</strong></td>
+                            <td>Peruvian Sol (PEN)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time Zone:</strong></td>
+                            <td>UTC-5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Calling Code:</strong></td>
+                            <td>+51</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Internet TLD:</strong></td>
+                            <td>.pe</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="place-weather">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/sunny-icon.svg" alt="Sunny Weather Icon">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Temperature:</strong></td>
+                            <td id="temperature">10°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conditions:</strong></td>
+                            <td>Partly Cloudy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wind:</strong></td>
+                            <td id="windSpeed">5 km/h</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wind Chill:</strong></td>
+                            <td id="windChill"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModifiedDate"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

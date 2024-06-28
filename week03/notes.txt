@@ -1,0 +1,65 @@
+8 Fundamental Principles of Effective Web Design
+
+    1.Accessibility
+        Ensuring inclusivity for all users, allowing them to equally perceive, interpret, navigate, and engage with the web.
+        Enabling all users to contribute to the web.
+
+    2.Visual Hierarchy
+        Arranging your design in order of importance using proportion, color, images, contrast, typography, white space, texture, and style.
+
+    3.Web Safe Fonts
+        Using fonts that are adapted to every browser and device ensures that the end user sees the font the designer intended, rather than a fallback font.
+
+    4.Typography
+        Typography often occupies a significant portion of a website's area. Arial, Helvetica, and Verdana are simple and easy to read online.
+        A 16px font size is optimal, and it’s best to use a maximum of three fonts (for headers and body text).
+
+    5.Colors
+        Colors elicit emotional reactions and should stay in context with your overall message.
+        Considerations:
+            Limit the color palette to fewer than five hues.
+            Choose complementary colors.
+
+    6.Grid Layouts
+        The grid-based style organizes material into a simple, rigid grid structure with columns and sections that align, seem balanced, and enforce order, resulting in an aesthetically attractive website.
+        Grids help maintain order by aligning the objects on your webpage.
+
+    7.F Pattern Design
+        Based on eye-tracking research, users often scan websites in an "F" pattern, viewing the top and left-hand corners of the screen the most.
+
+    8.Responsive Design
+        Ensuring your content is flexible and can adapt to various screen sizes.
+
+
+Common Design mistakes Video
+
+- Keep text 50 - 60 characters per line
+- contrast
+-scale fonts
+- always remember the content
+-consistant design (color palette and fonts/ images)
+
+
+Web Design Principles Summary
+
+    Clarity and Simplicity: Keep the design clean and uncluttered. Use ample 
+    whitespace to guide the user's focus and avoid overwhelming them with too much information at once.
+    
+    Consistency: Maintain a consistent visual language throughout the design. This includes using consistent
+    typography, color schemes, and layout patterns across different pages or sections of your design.
+    
+    Hierarchy: Establish a clear hierarchy of information to help users understand the relative importance 
+    of different elements on the page. Use techniques like size, color, and typography to emphasize important content.
+    
+    Accessibility: Ensure that your design is accessible to all users, including those with disabilities.
+    This may involve considerations such as providing alternative text for images, using sufficient color contrast, 
+    and implementing keyboard navigation.
+    
+    Feedback: Provide clear feedback to users when they interact with elements on the page. This could include visual 
+    cues such as button states or animations to indicate that an action has been successfully completed.
+    
+    User-Centric Design: Design with the needs and preferences of your target audience in mind. Conduct user research
+     to understand their goals, behaviors, and pain points, and tailor your design accordingly.
+    Visual Appeal: Use visually appealing elements such as high-quality images, engaging animations, and attractive 
+    typography to capture the user's attention and create a memorable experience.
+
