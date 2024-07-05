@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: lightblue;
+    color: black;
+    font-size: larger;
+    
+}
+
+footer p {
+    margin: 5px 0;
+}
