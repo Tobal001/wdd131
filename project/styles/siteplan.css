@@ -1,0 +1,49 @@
+/* *** Global Styles *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align:left;
+    padding: 2rem;
+}
+
+section {
+    padding: 0 3rem ;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2,h3,h4 {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.color-box {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #000;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#logo {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #003366;
+    font-size: x-large;
+}
