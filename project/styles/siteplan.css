@@ -73,7 +73,7 @@ h3 {
     border-radius: 1rem;
 }
 
-.scenario-card, #banner, #scenario-content {
+.scenario-card, #banner, #scenario-content, #wireframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,8 +95,13 @@ li {
 }
 
 #available {
-    color: green;
+    color: darkgreen;
 }
+
+section img {
+    width: 70%;
+}
+
 
 @media (min-width: 850px) {
     #styles {
