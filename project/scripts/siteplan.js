@@ -1,4 +1,4 @@
-[
+const senerios = [
     {
       visitorProfile: "LDS Church Member Seeking Deeper Understanding",
       questions: [
@@ -36,5 +36,29 @@
         "What are the LDS views on prophets and continuing revelation, and how do they influence church teachings and practices?"
       ]
     }
-  ]
-  
+];
+
+let currentScenarioIndex = 0;
+
+document.addEventListener('DOMContentLoaded', () => {
+    showScenario(currentScenarioIndex);
+});
+
+function showScenario(index) {
+    const scenarioContent = document.getElementById('scenario-content');
+    const scenario = senerios[index];
+    
+    scenarioContent.innerHTML = `
+        <div class="scenario-card">
+            <h3>${scenario.visitorProfile}</h3>
+            <ul>
+                ${scenario.questions.map(question => `<li>${question}</li>`).join('')}
+            </ul>
+        </div>
+    `;
+};
+
+function showNextScenario() {
+    currentScenarioIndex = (currentScenarioIndex + 1) % senerios.length;
+    showScenario(currentScenarioIndex);
+};
