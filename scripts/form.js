@@ -56,7 +56,7 @@ const products = [
     const formContainer = document.querySelector('.wf1');
     formContainer.innerHTML = `
     <p> Thanks for for reviewing the ${productName}</p>
-    <p> This is your ${reviewCounter}th review.</p>
+    <p> You have reviewed ${reviewCounter} times.</p>
     `;
   }
   
