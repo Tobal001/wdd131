@@ -20,12 +20,14 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <div>Product Name*</div>
-                <select name="product" id="product" required>
-                    <option value="" disabled selected>Choose a Product... </option>
-                </select>
-                <label for="rating">
-                    <div id="star-title">Overall Rating*</div> 
+                <label class="title" for="product">
+                Product Name*
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Choose a Product... </option>
+                    </select>
+                </label>
+                <label class="title" for="rating">
+                    Overall Rating* 
                     <div id="star-rating">
                         <input type="radio" name="stars" id="star-a" value="5" required/>
                         <label for="star-a"></label>
@@ -39,23 +41,23 @@
                         <label for="star-e"></label>
                     </div>
                 </label>
-                <label for="Installation-date">
-                    <div>Date of Installation*</div>
+                <label class="title" for="Installation-date">
+                    Date of Installation*
                     <input type="date" id="installed" name="installed" required>
                 </label>
-                <label for="features">
-                    <div>Which features did you find useful in the product? (Check all that apply)*</div>
+                <label class="title" for="features">
+                    Which features did you find useful in the product? (Check all that apply)*
                     <label for="check-dura"><input id="check-dura" type="checkbox" name="features" value="durability" required>Durability</label>
                     <label for="check-ease"><input id="check-ease" type="checkbox" name="features" value="ease-of-use" required>Ease of Use</label>
                     <label for="check-perf"><input id="check-perf" type="checkbox" name="features" value="performance" required>Performance</label>
                     <label for="check-design"><input id="check-design" type="checkbox" name="features" value="design" required>Design</label>
                 </label>
-                <label for="review-txt">
-                    <div>Written Review <small>(optional)</small></div>
+                <label class="title" for="review-txt">
+                    Written Review <small>(optional)</small>
                     <textarea name="written-review" id="written-review"></textarea>
                 </label>
-                <label for="username">
-                    <div>Your Name <small>(optional)</small></div>
+                <label class="title" for="username">
+                   Your Name <small>(optional)</small>
                     <input type="text" id="username" name="users name">
                 </label>
                 </fieldset>
