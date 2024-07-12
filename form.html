@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review Form Assignment</title>
+    <meta name="description" content="A Product Review Form">
+    <meta name="author" content="Cristobal Henriquez">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <div>Product Name*</div>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product... </option>
+                </select>
+                <div id="star-title">Overall Rating*</div> 
+                <div id="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" required/>
+                    <label for="star-a"></label>
+                    <input type="radio" name="stars" id="star-b" value="4" required/>
+                    <label for="star-b"></label>
+                    <input type="radio" name="stars" id="star-c" value="3" required/>
+                    <label for="star-c"></label>
+                    <input type="radio" name="stars" id="star-d" value="2" required/>
+                    <label for="star-d"></label>
+                    <input type="radio" name="stars" id="star-e" value="1" required>
+                    <label for="star-e"></label>
+                </div>
+                <div>Date of Installation*</div>
+                <input type="date" id="install-date" name="install-date" required>
+                <div>Which features did you find useful in the product? (Check all that apply)*</div>
+                <label for="check-dura"><input id="check-dura" type="checkbox" name="features" value="durability" required>Durability</label>
+                <label for="check-ease"><input id="check-ease" type="checkbox" name="features" value="ease-of-use" required>Ease of Use</label>
+                <label for="check-perf"><input id="check-perf" type="checkbox" name="features" value="performance" required>Performance</label>
+                <label for="check-design"><input id="check-design" type="checkbox" name="features" value="design" required>Design</label>
+                <div>Written Review <small>(optional)</small></div>
+                <textarea name="written-review" id="written-review"></textarea>
+                <div>User Name <small>(optional)</small></div>
+                <input type="text" id="user-name" name="user-name">
+            </fieldset>
+            <input type="submit" value="Post Review">
+            <small id="symbol">* All inputs with this symbol must be filled before procceding</small>
+
+        </form>
+    </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModifiedDate"></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,200 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+main {
+  padding: 0 2%;
+  min-height: 20rem;
+}
+
+header {
+  background-color: #264143;
+  margin-bottom: 2rem;
+}
+
+h1 { 
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+h1, 
+.wf1 div,
+.wf1 input,
+.wf1 p [type="submit"] {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*----------- FORM STYLING --------------*/
+.wf1 {
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px rgb(0, 2, 65);
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.wf1 fieldset {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+}
+
+.wf1 legend {
+  color: blue;
+  padding: 0 0.5rem;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+}
+
+.wf1 div {
+  padding-top: 1rem;
+  color: rgb(22, 20, 32);
+  font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 textarea,
+.wf1 input[type="submit"] {
+  outline: none;
+  background-color: #eee;
+  display: block;
+  border: 2px solid #264143;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.wf1 textarea {
+  height: 100px;
+}
+
+.wf1 input:required,
+.wf1 select:required {
+  box-shadow: 3px 4px 0px 1px rgb(243, 129, 129);
+}
+
+.wf1 input:valid,
+.wf1 textarea:valid,
+.wf1 select:valid {
+  box-shadow: 3px 4px 0px 1px rgb(117, 167, 117);
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+  margin-right: 6px;
+  box-shadow: none;
+}
+
+.wf1 input[type="submit"] {
+  border: 2px solid #264143;
+  background-color: #264143;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  font-weight: 500;
+  box-shadow: 1px 1px 4px #999;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+/* Hover and active states for the submit button */
+.wf1 input[type="submit"]:hover {
+  background-color: #1e3b3f;
+  border-color: #1e3b3f;
+}
+
+.wf1 input[type="submit"]:active {
+  background-color: #162c2e;
+  border-color: #162c2e;
+}
+
+#symbol {
+  font-size: x-small;
+}
+
+
+/*---------------- Overall Review Styling---------- */
+#star-rating {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 0 30px;
+  position: relative;
+  max-width: 300px;
+}
+
+/* Hide the inputs */
+#star-rating input {
+  display: none;
+}
+
+/* Set properties of all labels */
+#star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Arial;
+  font-size: 30px;
+  transition: 0.2s ease;
+  color: rgb(71, 71, 71);
+}
+
+/* Give label a hover state */
+#star-rating label:hover {
+  color: #868686;
+  transition: 0.2s ease;
+}
+
+#star-rating label:active::before {
+  transform: scale(1.1);
+}
+
+/* Set shape of unselected label */
+#star-rating label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0;
+  line-height: 26px;
+}
+
+/* Set full star shape for checked label and those that come after it */
+#star-rating input:checked ~ label:before {
+  content: '\2605';
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #264143;
+  color: #fff;
+  
+}
+
+
+
