@@ -1,31 +1,10 @@
-body {
-    font-family: var(--font-family-primary);
-    font-weight: 400;
-    font-style: normal;
-    max-width: 850px;
-    margin: 0 auto;
-}
 
 
-header {
-    max-width: 850px;
-    text-align: left;
-}
 
-main, .card {
-    padding: 12px;
-}
 
-.articles-container {
-    padding-left: 0 12px ;
-}
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem 1rem 0 0;
-    margin-bottom: 1rem;
-}
+
+
 
 hr {
     border-color: black;
@@ -47,13 +26,6 @@ section a {
     justify-self: flex-end;
 }
 
-h1, h2, h3 {
-    font-family: var(--font-family-secondary);
-    color: var(--primary-color);
-    font-weight: 400;
-    font-style: normal; 
-}
-
 
 h3, h2 {
     margin-bottom: 0.5rem;
@@ -67,29 +39,12 @@ h3, h2 {
     margin-bottom: 1rem;
 }
 
-#logo {
-    font-family: var(--font-family-secondary);
-    font-weight: 700;
-    font-style: normal;
-    color: var(--primary-color);
-    font-size: var(--font-size-large);
-    margin-bottom: 0;
-    padding: 2rem;
-}
 
 .featured-posts .card {
     background-color: #e4e0e0;
 }
 
-.card {
-    background-color: var(--accent-color-1);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 #intro {
     padding: 2rem 0;

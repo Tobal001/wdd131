@@ -17,10 +17,10 @@
 <body>
     <header class="main-header">
         <div class="main-nav">
-            <nav class="navbar w-nav" role="navigation">
+            <nav class="navbar" role="navigation">
                 <div class="nav-container">
                     <div class="nav-wrap">
-                        <h1 class="nav-logo w-nav-brand">EternalMan</h1>
+                        <h1 class="nav-logo">EternalMan</h1>
                         <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
                         <div class="nav-menu">
                             <div class="nav-inner" id="nav-inner">
@@ -34,27 +34,35 @@
         </div>
     </header>
     <main>
-        <div id="intro">
-            <h1>
-                Exploring the Depths of LDS Theology and Philosphy 
-            </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Dignissimos, nesciunt natus. Dolorem tempore eaque eume.</p>
-        </div>
+        <div class="intro-container">
+            <div class="intro-wrap">
+                <div class="intro-flex">
+                    <h1 class="h1-intro">
+                        Exploring the Depths of LDS Theology and Philosphy 
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dignissimos, nesciunt natus. Dolorem tempore eaque eume.</p>
+                </div>        
+            </div>
+    </div>
+        <section class="articles-section">
         <div class="articles-container">
-            <div id="featured-section">
-                <h3>Featured Posts</h3>
-                <section id="featured-posts">
+            <div class="featured-wrap">
+                <div class="flex-item">
+                    <h2>Editor's Pick</h2>
+                </div>
+
+            <div class="articles">
+                <a id="featured-posts">
                     <!-- Featured posts will be inserted here by JavaScript -->
+                </a>
+
+                <section id="recent-posts">
+                    <!-- Recent posts will be inserted here by JavaScript -->
                 </section>
             </div>
-            <div id="recent-section">
-            <h3>Recent Posts</h3>
-            <section id="recent-posts">
-                <!-- Recent posts will be inserted here by JavaScript -->
-            </section>
-            </div>
         </div>
+        </section>
     </main>
     <footer>
         <div>
