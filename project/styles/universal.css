@@ -1,4 +1,4 @@
-/* -------------GENERAL STYLES------------ */
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body, p {
     font-optical-sizing: auto;
 }
 
-body,.main-nav {
+body, .main-nav{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -18,7 +18,7 @@ body,.main-nav {
 .logo, .h1-intro, h2 {
     font-family: "Averia Serif Libre", serif;
     font-weight: 400;
-} 
+}
 
 h1 {
     font-size: 44px;
@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-    word-spacing: 0.2;
+    word-spacing: 0.2em;
     font-size: 30px;
     line-height: 36px;
 }
@@ -47,7 +47,8 @@ h4 {
     font-weight: 400;
     line-height: 24px;
 }
-/* -------------HEADER/NAVIGATION------------ */
+
+/* Header & Navigation */
 .main-header {
     width: 100%;
     position: fixed;
@@ -108,7 +109,6 @@ h4 {
     border-radius: 6px;
     background-color: rgba(255, 255, 255, .05);
     border: 1.5px solid rgba(255, 255, 255, .2);
-    border-radius: 6px;
     padding: 8px 10px;
     transition: border-color .2s ease-in, color .2s ease-in, background-color .2s ease-in;
 }
@@ -171,7 +171,7 @@ h4 {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* -------------FOOTER------------ */
+/* Footer styles */
 footer {
     display: flex;
     flex-direction: column;
@@ -244,8 +244,7 @@ ul {
     height: 30px;
 }
 
-
-/* -------------MEDIA QUERIES------------ */
+/* Media Queries */
 @media (min-width: 768px) {    
     .intro-wrap {
         padding: 120px 200px 40px 20px;
@@ -314,34 +313,53 @@ ul {
     }
 
     .nav-menu {
+        position: relative;
+        left: auto;
+        top:auto;
+        background-color: transparent;
+        width: auto;
+        border-radius: 8px;
         display: flex;
         flex-direction: row;
-        position: relative;
-        width: auto;
-        background-color: transparent;
-        justify-content: space-between;
+        justify-content:space-around;
+        align-items: center;
+        box-shadow: none;
+        gap: 4px;
+        
     }
 
-    .hamburger-svg {
+    .ham-container {
         display: none;
     }
 
-    .nav-inner {
+    .nav-wrap {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
     }
 
-    .nav-link-main {
-        margin-left: 40px;
-        margin-right: 40px;
+    
+    .nav-item {
+        display: flex;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 24px;
+        align-items: center;
+        color: #fff;
+        border-bottom: none;
     }
 
-    .nav-style a {
-        font-size: 14px;
+    .nav-item:hover {
+        color:#000;
+        border-radius: 8px;
+    }
+
+
+    .nav-link{
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 20px;
-        padding: 7px 17px;
+        border-radius: 8px;
     }
 
     .intro-wrap {

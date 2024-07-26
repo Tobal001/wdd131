@@ -1,5 +1,7 @@
 
-
+.logo, .nav-item{
+    color:#000;
+}
 .about-us {
     display: flex;
     flex-direction: column;

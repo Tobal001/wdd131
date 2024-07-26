@@ -1,4 +1,3 @@
-// nav.js
 document.addEventListener("DOMContentLoaded", function() {
     const mainHeader = document.querySelector(".main-header");
     const introContainer = document.querySelector(".intro-container");
@@ -6,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navMenu = document.querySelector(".nav-menu");
     const hamContainer = document.querySelector(".ham-container");
     const hamBars = document.querySelectorAll(".bar");
+    const navItems = document.querySelectorAll(".nav-item"); // Changed to querySelectorAll
 
     // Change logo and hamburger menu color on scroll
     function handleScroll() {
@@ -13,12 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (window.scrollY > introContainerBottom) {
             mainHeader.style.color = "#000";
-            hamBars.forEach(bar => bar.style.backgroundColor = "#000");
+            navItems.forEach(item => item.style.color = "#000"); // Loop through all nav items
+            hamBars.forEach(bar => bar.style.backgroundColor = "#000"); // Fixed the property to backgroundColor
             hamContainer.style.backgroundColor = "rgba(31, 31, 31, .05)";
             hamContainer.style.border = "1.5px solid rgba(31, 31, 31, 0)";
         } else {
             mainHeader.style.color = "";
-            hamBars.forEach(bar => bar.style.backgroundColor = "");
+            hamBars.forEach(bar => bar.style.backgroundColor = ""); // Fixed the property to backgroundColor
+            navItems.forEach(item => item.style.color = ""); // Loop through all nav items
             hamContainer.style.backgroundColor = "";
             hamContainer.style.border = "";
         }
