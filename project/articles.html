@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eternal Man</title>
+    <title>Eternal Man Articles</title>
     <meta name="description" content="A Faithful Exploration of the Rich Theological and Philosophical Implications of the Restored Gospel of the Church of Jesus Christ of Latter-day Saints">
     <meta name="author" content="Cristobal Henriquez">
-    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/universal.css">
-    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/articles.css">
+    <script src="scripts/articles.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,66 +44,62 @@
         </div>
     </header>
     <main>
-        <div class="intro-container">
-            <picture class="hero-image">
-                <source srcset="images/largest-eternalman.webp" media="(min-width: 1400px)">
-                <source srcset="images/large-eternalman.webp" media="(min-width: 1000px)">
-                <source srcset="images/medium-eternalman.webp" media="(min-width:721px)">
-                <img src="images/small-eternalman.webp" alt="an eternal spirit" width="250" height="500">
-            </picture>
-            <div class="intro-wrap">
-                <div class="intro-flex">
-                    <h1 class="h1-intro">
-                        Exploring the Depths of LDS Theology and Philosphy 
-                    </h1>
-                    <p class="p-intro">Explore the profound depths of Latter-day Saint theology and philosophy. Join us on a journey of discovery and strengthen your understanding of the divine plan.</p>
-                </div>        
-            </div>
-    </div>
-        <section class="articles-section">
-        <div class="articles-container">
-                <div class="flex-item">
-                    <h2>Editor's picks</h2>
-                </div>
-
-            <div class="articles">
-                <a id="featured-link">
-                    <!-- Featured posts will be inserted here by JavaScript -->
+        <section class="nav-topics">
+            <h2 class="page-title">Articles</h2>
+            <div class="topics-wrapper">
+                <a class="topic-container" id="all">
+                    <div class="topic-name">All</div>
                 </a>
-                <div class="recent-btn">
-                <a id="recent-link">
-                    <!-- Recent posts will be inserted here by JavaScript -->
+                <a class="topic-container" id="theology">
+                    <div class="topic-name">Theology</div>
                 </a>
-                <a href="articles.html" class="view-all-btn">View all</a>
-                </div>
+                <a class="topic-container" id="philosophy">
+                    <div class="topic-name">Philosophy</div>
+                </a>
+                <a class="topic-container" id="d&c">
+                    <div class="topic-name">BoM</div>
+                </a>
+                <a class="topic-container" id="faith-and-testimony">
+                    <div class="topic-name">Faith</div>
+                </a>
+                <a class="topic-container" id="scripture">
+                    <div class="topic-name">Scripture</div>
+                </a>
+                <a class="topic-container" id="word-of-wisdom">
+                    <div class="topic-name">Word of Wisdom</div>
+                </a>
+                <a class="topic-container" id="priesthood">
+                    <div class="topic-name">Priesthood</div>
+                </a>
+                <a class="topic-container" id="church-governance">
+                    <div class="topic-name">Church Governance</div>
+                </a>
+                <a class="topic-container" id="community-and-service">
+                    <div class="topic-name">Service</div>
+                </a>
             </div>
         </section>
+        <section class="article-list">
+            <div id="articles"></div>
+            <div id="pages"></div>
+        </section>
     </main>
-    <footer>
+    <footer>    
         <h1 class="logo">EternalMan <small>&copy;</small></h1>
-
         <div class="footer-socials">
             <ul>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="medium"
-                    aria-label="Medium" href="https://medium.com/"> <img class="socials" src="images/medium-logo.svg" alt="">
-                    </a>
+                    <a class="link" data-social="medium" aria-label="Medium" href="https://medium.com/"> <img class="socials" src="images/medium-logo.svg" alt=""></a>
                     <div class="tooltip">Medium</div>
                 </li>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="x"
-                    aria-label="x" href="https://x.com/?lang=en"><img class="socials" src="images/twitter-logo.svg" alt=""></a>
+                    <a class="link" data-social="x" aria-label="x" href="https://x.com/?lang=en"><img class="socials" src="images/twitter-logo.svg" alt=""></a>
                     <div class="tooltip">X</div>
                 </li>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="instagram"
-                    aria-label="Instagram" href="https://www.instagram.com/"><img class="socials" src="images/instagram-logo.svg" alt=""></a>
+                    <a class="link" data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/"><img class="socials" src="images/instagram-logo.svg" alt=""></a>
                     <div class="tooltip">Instagram</div>
                 </li>
-            </ul>
             </ul>
         </div>
     </footer>

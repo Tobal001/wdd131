@@ -1,0 +1,126 @@
+
+/* -------------ARTICLES CARD AND LAYOUT------------ */
+.main-header {
+    color: #000;
+}
+
+.ham-container {
+    background-color: rgba(31, 31, 31, 0.05);
+    border: 1.5px solid rgba(31, 31, 31, 0);
+}
+
+.bar {
+    background-color: #000;
+}
+
+.nav-topics {
+    background-color: #fff;
+    padding: 100px 20px 0 20px;
+}
+
+.topics-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px;
+    white-space: nowrap;
+    margin-top: 24px;
+}
+
+.topic-name {
+    background-color: #fff;
+    padding: 6px 16px;
+    border: 1px solid #1c1b174d;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.topic-name:hover {
+    background-color: #e0e0e0;
+}
+
+.topic-name.active {
+    background-color: black;
+    color: white;
+}
+
+picture img {
+    border-radius: 8px;
+}
+
+.article-image {
+    margin-bottom: 24px;
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+    column-gap: 24px;
+    padding-top: 24px;
+    grid-template-rows: auto auto auto;
+    padding-left: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#articles a {
+    text-decoration: none;
+}
+
+.summary-txt p {
+    line-height: 20px;
+    color: rgba(28, 27, 23, 0.8);
+    font-size: 16px;
+}
+
+#articles a:visited {
+    color: inherit; 
+    text-decoration: none;
+}
+
+#pages {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#pages a {
+    background-color: #fff;
+    padding: 6px 6px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    #articles {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .nav-topics {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    #articles {
+        padding: 0 48px;
+    }
+}

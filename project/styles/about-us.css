@@ -1,0 +1,51 @@
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.purpose {
+    background-color: #e0e0e0;
+    padding: 100px 24px 64px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 68px;
+}
+
+.purpose p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    max-width: 600px;
+}
+
+.about-me {
+    padding: 64px 24px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 68px;
+
+}
+
+.about-me p {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.para {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .para {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

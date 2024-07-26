@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eternal Man</title>
+    <title>Eternal Man Article</title>
     <meta name="description" content="A Faithful Exploration of the Rich Theological and Philosophical Implications of the Restored Gospel of the Church of Jesus Christ of Latter-day Saints">
     <meta name="author" content="Cristobal Henriquez">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/universal.css">
-    <script src="scripts/home.js" defer></script>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/full-article.css">
+    <script src="scripts/full-article.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,66 +45,47 @@
         </div>
     </header>
     <main>
-        <div class="intro-container">
-            <picture class="hero-image">
-                <source srcset="images/largest-eternalman.webp" media="(min-width: 1400px)">
-                <source srcset="images/large-eternalman.webp" media="(min-width: 1000px)">
-                <source srcset="images/medium-eternalman.webp" media="(min-width:721px)">
-                <img src="images/small-eternalman.webp" alt="an eternal spirit" width="250" height="500">
-            </picture>
-            <div class="intro-wrap">
-                <div class="intro-flex">
-                    <h1 class="h1-intro">
-                        Exploring the Depths of LDS Theology and Philosphy 
-                    </h1>
-                    <p class="p-intro">Explore the profound depths of Latter-day Saint theology and philosophy. Join us on a journey of discovery and strengthen your understanding of the divine plan.</p>
-                </div>        
-            </div>
-    </div>
-        <section class="articles-section">
-        <div class="articles-container">
-                <div class="flex-item">
-                    <h2>Editor's picks</h2>
+        <div class="article-intro">
+            <div class="intro-text">
+                <div class="breadcrumb">
+                    <a href="home.html" class="breadcrumb-link">Home</a>
+                    <img src="https://cdn.prod.website-files.com/5f8dd056c51c1d04c3eaa497/618430895dacc1028c60e007_arrow-right.svg" 
+                    loading="eager" width="16" height="16" alt="" class="breadcrumb-arrow">
+                    <a href="articles.html" class="breadcrumb-link">Articles</a>
                 </div>
-
-            <div class="articles">
-                <a id="featured-link">
-                    <!-- Featured posts will be inserted here by JavaScript -->
-                </a>
-                <div class="recent-btn">
-                <a id="recent-link">
-                    <!-- Recent posts will be inserted here by JavaScript -->
-                </a>
-                <a href="articles.html" class="view-all-btn">View all</a>
+                <div id="article-date">
+                    <!-- Article date will be inserted here by JavaScript -->
+                </div>
+                <div id="article-title">
+                    <!-- Article title will be inserted here by JavaScript -->
                 </div>
             </div>
-        </section>
+            <div id="article-img">
+                <!-- Article img will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="article-container">
+            <div id="p-container"></div>
+        
+            <!-- Full article will be inserted here by JavaScript -->
+        </div>   
     </main>
-    <footer>
+    <footer>    
         <h1 class="logo">EternalMan <small>&copy;</small></h1>
-
         <div class="footer-socials">
             <ul>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="medium"
-                    aria-label="Medium" href="https://medium.com/"> <img class="socials" src="images/medium-logo.svg" alt="">
-                    </a>
+                    <a class="link" data-social="medium" aria-label="Medium" href="https://medium.com/"> <img class="socials" src="images/medium-logo.svg" alt=""></a>
                     <div class="tooltip">Medium</div>
                 </li>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="x"
-                    aria-label="x" href="https://x.com/?lang=en"><img class="socials" src="images/twitter-logo.svg" alt=""></a>
+                    <a class="link" data-social="x" aria-label="x" href="https://x.com/?lang=en"><img class="socials" src="images/twitter-logo.svg" alt=""></a>
                     <div class="tooltip">X</div>
                 </li>
                 <li class="socials-content">
-                    <a class="link"
-                    data-social="instagram"
-                    aria-label="Instagram" href="https://www.instagram.com/"><img class="socials" src="images/instagram-logo.svg" alt=""></a>
+                    <a class="link" data-social="instagram" aria-label="Instagram" href="https://www.instagram.com/"><img class="socials" src="images/instagram-logo.svg" alt=""></a>
                     <div class="tooltip">Instagram</div>
                 </li>
-            </ul>
             </ul>
         </div>
     </footer>
