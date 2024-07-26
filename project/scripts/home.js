@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to create a card
     function createCard(post, index, isFeatured) {
+        const cardLink = document.createElement("a");
+        cardLink.href = `full-article.html?post=${index}`;
+
         const card = document.createElement("div");
         card.className = isFeatured ? "featured-card" : "recent-card";
 
@@ -50,9 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
             card.appendChild(responsiveImage);
         }
 
-         const cardLink = document.createElement("a");
-        cardLink.href = `article.html?post=${index}`;
-    
         const postSummary = document.createElement("div");
         postSummary.className = isFeatured ? "featured-summary" : "recent-summary";
 
@@ -79,8 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         postSummary.appendChild(section);
 
         card.appendChild(postSummary);
-
-
+        cardLink.appendChild(card); // Append card to link
 
         return cardLink;
     }
