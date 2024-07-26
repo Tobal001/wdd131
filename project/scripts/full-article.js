@@ -1,4 +1,3 @@
-// full-article.js
 document.addEventListener("DOMContentLoaded", function() {
     const pContainer = document.getElementById("p-container");
     const articleTitle = document.getElementById("article-title");
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
             picture.appendChild(img);
         } else {
             const img = document.createElement("img");
-            img.src = "default-image.webp"; // Default image in case images are missing
+            img.src = "default-image.webp"; 
             img.alt = post.title;
             picture.appendChild(img);
         }
@@ -52,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to display the full article
     function displayArticle(post) {
-        const h2Title = document.createElement("h1")
-        h2Title.textContent = post.title;
-        articleTitle.appendChild(h2Title)
+        const h1Title = document.createElement("h1");
+        h1Title.textContent = post.title;
+        articleTitle.appendChild(h1Title);
         articleDate.textContent = new Date(post.date).toDateString();
 
         if (post.images) {

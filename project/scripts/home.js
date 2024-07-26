@@ -1,4 +1,3 @@
-// project.js
 document.addEventListener("DOMContentLoaded", function() {
     const featuredContainer = document.getElementById("featured-link");
     const recentContainer = document.getElementById("recent-link");
@@ -51,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
             card.appendChild(responsiveImage);
         }
 
+         const cardLink = document.createElement("a");
+        cardLink.href = `article.html?post=${index}`;
+    
         const postSummary = document.createElement("div");
         postSummary.className = isFeatured ? "featured-summary" : "recent-summary";
 
@@ -78,7 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         card.appendChild(postSummary);
 
-        return card;
+
+
+        return cardLink;
     }
 
     // Function to display posts

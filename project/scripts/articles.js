@@ -1,4 +1,3 @@
-// articles.js
 document.addEventListener("DOMContentLoaded", function() {
     const topicNames = document.querySelectorAll('.topic-name');
     let allPosts = [];

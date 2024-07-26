@@ -4,6 +4,10 @@
     color: black;
 }
 
+.bar {
+    background-color: #000;
+}
+
 .article-intro { 
     background-color: #e0e0e0;
     padding: 100px 12px 64px;
